@@ -15,3 +15,4 @@ Capacitors:
 
 Electrodes:
 - 3x gold cup electrode -> https://shop.openbci.com/products/openbci-gold-cup-electrodes
+- 1x conductive paste -> https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-8oz-jar
