@@ -38,8 +38,16 @@ void loop() {
     vReal[i] = analogRead(eeg_pin);
     vImag[i] = 0;
 
-    if (digitalRead(key_pin) == 1) { state = 1; }
-    
+    state = digitalRead(key_pin);
+    // on key press
+    if (state == 1 && !pressed) {
+      Serial.println(-1);
+      pressed = true;
+    }
+    else if (state == 0 && pressed) {
+      pressed = false;
+    }
+      
     while ((micros() - new_time) < sampling_period_us) {  /*wait*/  }
   }
 
@@ -53,13 +61,6 @@ void loop() {
   for (int i = floor(8/(sampling_freq/samples)); i < ceil(12/(sampling_freq/samples)); i++) {
     alpha_amplitude += (int)vReal[i];
   }
-  
-  // on key press
-  if (state == 1 && !pressed) {
-    Serial.println((uint8_t)round(alpha_amplitude));
-    pressed = true;
-  }
-  else if (state == 0 && pressed) {
-    pressed = false;
-  }
+
+  Serial.println((uint8_t)round(alpha_amplitude));
 }
