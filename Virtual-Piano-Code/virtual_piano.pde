@@ -16,7 +16,7 @@ int baseOctave = 3;
 // Keyboard variables
 PImage keyboard;
 
-String[] chromatic_scale = {"C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"};
+String[] chromaticScale = {"C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"};
 int[] whites = {1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1};
 int spacing = 101;
 int spacingMultiplier;
@@ -25,7 +25,7 @@ boolean pressed = false; // changes the color of the note highlight
 
 // Graph variables
 int[] amplitudes = new int[100]; // stores the last 100 amplitudes of the time-frequency domain
-int oldest_index = 0; // points to the oldest variable in amplitudes
+int oldestIndex = 0; // points to the oldest variable in amplitudes
 
 
 void setup() {
@@ -61,7 +61,7 @@ void draw() {
         if (previousSound != null) { previousSound.stop(); } // stops previous note
 
         // plays the note
-        noteSound = new SoundFile(this, "piano-mp3/"+chromatic_scale[playedNote%12]+str(floor(playedNote/12) + baseOctave)+".mp3");
+        noteSound = new SoundFile(this, "piano-mp3/"+chromaticScale[playedNote%12]+str(floor(playedNote/12) + baseOctave)+".mp3");
         noteSound.play();
 
         previousSound = noteSound; // archives the note so it can be stopped only when a new one is played
@@ -70,14 +70,14 @@ void draw() {
         fill(255);
         rect(0, 300, 600, 300);
         fill(0);
-        text(chromatic_scale[playedNote%12], 250, 500); 
+        text(chromaticScale[playedNote%12], 250, 500); 
       } 
       else if (val != null) { // when the button is not pressed, the eeg_processing program send the amplitude of the alpha waves
         pressed = false;
         
-        amplitudes[oldest_index] = int(val); // changed oldest value in the array to newest value
-        oldest_index += 1; // updates pointer
-        if (oldest_index >= 100) { oldest_index = 0; } // set the pointer inbounds
+        amplitudes[oldestIndex] = int(val); // changed oldest value in the array to newest value
+        oldestIndex += 1; // updates pointer
+        if (oldestIndex >= 100) { oldestIndex = 0; } // set the pointer inbounds
         
         drawGraph();
         
@@ -115,8 +115,8 @@ void drawGraph() {
   fill(255);
   rect(0, 0, 600, 300);
   for (int i = 0; i < 100; i++) {
-    int y1 = (oldest_index+i)%100;
-    int y2 = (oldest_index+i+1)%100;
+    int y1 = (oldestIndex+i)%100;
+    int y2 = (oldestIndex+i+1)%100;
     line(0 + 6*i, 280-amplitudes[y1], 6 + 6*i, 280-amplitudes[y2]);
   }
 }
