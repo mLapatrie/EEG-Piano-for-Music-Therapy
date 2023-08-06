@@ -35,3 +35,6 @@ Note: Right now, only jazz music is coded in the program, but it can be easily c
 **The signal read by the arduino is 1023.0**: If your signal is stuck at 1023.0, it means that your signal is too high for the Arduino to read. Try changing the gain by playing with the potentiometer.
 
 If none of this works or your problem is not shown in the troubleshooting section, consider contacting me and I will be more than happy to help.
+
+## License
+This project is licensed under the [MIT License](https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/blob/main/LICENSE)
