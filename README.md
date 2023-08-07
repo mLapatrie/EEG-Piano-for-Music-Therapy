@@ -32,7 +32,7 @@ The second mode allows the user to play over a serie of preprogrammed chords. It
 Note: By default, the program comes with a serie of jazz chords that play in the background, which can easily be muted. One can change the preprogrammed chords by changing the arrayOfScales variable in the assisted_virtual_piano.pde file.
 
 ## Troubleshooting
-**The signal read by the Arduino is 0.0**: If you've tried adjusting the gain of the EEG and the signal is stuck at zero, the signal may be negative. You can test this by interchanging the positive and the negative electrodes. If this doesn't work, try changing the resistor going from the inverting input to the output of the OP Amp to a higher value. This should drastically augment the gain and you should get a signal that clips a 1023.0. You can then play with the value of the gain to get a good signal. While doing all of this, make sure the impedance of your electrodes is at the lowest value possible.
+**The signal read by the Arduino is 0.0**: If you've tried adjusting the gain of the EEG and the signal is stuck at zero, the signal may be negative. You can test this by interchanging the positive and the negative electrodes. If this doesn't work, try changing the resistor going from the inverting input to the output of the OP Amp to a higher value. This should drastically augment the gain and you should get a signal that clips at 1023.0. You can then play with the value of the gain to get a good signal. While doing all of this, make sure the impedance of your electrodes is at the lowest value possible.
 
 **The signal read by the Arduino is 1023.0**: If your signal is stuck at 1023.0, it means that your signal is too high for the Arduino to read. Try changing the gain by playing with the potentiometer.
 
