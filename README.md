@@ -25,7 +25,7 @@ After placing the electrodes, one should play with the gain to get the best poss
 ### Virtual piano
 There are two modes that can be used with this program. The first one is a simple virtual piano that maps the amplitude of the alpha waves on two octaves of the piano. Then, when a button is pressed, the mapped note is played. This allows users to familiarize themselves with the machine. However, it is to note that controlling your alpha waves to this degree of precision is almost impossible. And althougth it can be fun for a while, the second mode makes the experience much better.
 
-![image](https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/assets/48076370/4341188c-5dab-43c7-9f62-47022a725295)
+<p align="center"><img src="https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/assets/48076370/6698c0e4-4f29-4e08-8f45-00ee18edeb5f"></p>
 
 ### Accompanied virtual piano
 The second mode plays a music track while the user plays the piano over it. It then tracks the inputs of the user and slightly corrects them if necessary to make the music sound more melodic. This tool is especially good with jazz music, but works with any type of music the user prefers. <br/>
