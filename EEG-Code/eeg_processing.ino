@@ -23,7 +23,7 @@ unsigned long new_time;
 void setup() {
   Serial.begin(9600);
 
-  pinMode(key_pin, INPUT);
+  pinMode(key_pin, INPUT_PULLUP);
 
   sampling_period_us = round(1000000 * (1.0 / sampling_freq)); // calculates the wait time between each analog read
 }
