@@ -23,7 +23,7 @@ The output of the EEG should go into the A0 pin of the Arduino UNO board. <br/>
 After placing the electrodes, one should play with the gain to get the best possible resolution without clipping with the eeg_test.ino program. Then, looking at the time-frequency domain, the user needs to play with the amplitude variable to make sure that the alpha amplitude is between 0 and 255 since it is then parsed as an unsigned byte.
 
 ### Virtual piano
-Two modes that can be used with this program. The first one is a simple virtual piano that maps the amplitude of the alpha waves on two octaves of the piano. Then, when a button is pressed, the mapped note is played. This allows users to familiarize themselves with the machine. However, it is to note that controlling your alpha waves to this degree of precision is almost impossible. And although it can be fun for a while, the second mode makes the experience much better.
+Two modes can be used with this program. The first one is a simple virtual piano that maps the amplitude of the alpha waves on two octaves of the piano. Then, when a button is pressed, the mapped note is played. This allows users to familiarize themselves with the machine. However, it is to note that controlling your alpha waves to this degree of precision is almost impossible. And although it can be fun for a while, the second mode makes the experience much better.
 
 <p align="center"><img src="https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/assets/48076370/6698c0e4-4f29-4e08-8f45-00ee18edeb5f"></p>
 
