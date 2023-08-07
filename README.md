@@ -1,7 +1,7 @@
 # EEG Piano for Music Therapy: Empowering Musical Expression for All
 
 ## Overview:<br/>
-Music Therapy with EEG Piano offers a distinctive perspective on music therapy, catering to individuals facing physical challenges. This project stands out from conventional EEG music initiatives by enabling users to actively partake in group sessions, fostering collective musical interaction. By using brainwave patterns captured through a homemade electroencephalogram (EEG) device, this tool allows users to control the pitch of musical notes, providing a unique and accessible way to play a musical instrument without requiring extensive physical dexterity. By removing this barrier, participants can easily join fellow musicians, creating a shared musical journey that's both therapeutic and enjoyable. 
+EEG Piano for Music Therapy offers a distinctive perspective on music therapy, catering to individuals facing physical challenges. This project stands out from conventional EEG music initiatives by enabling users to actively partake in group sessions, fostering collective musical interaction. By using brainwave patterns captured through a homemade electroencephalogram (EEG) device, this tool allows users to control the pitch of musical notes, providing a unique and accessible way to play a musical instrument without requiring extensive physical dexterity. By removing this barrier, participants can easily join fellow musicians, creating a shared musical journey that's both therapeutic and enjoyable. 
 
 <p align="center"><img src="https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/assets/48076370/fc47bf51-b3b5-4aa8-8ef8-ba6b18f33d32" width="1000"></p>
 
