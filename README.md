@@ -10,7 +10,7 @@ The repository contains the schematic for the EEG device, 3D models for the pian
 
 ## How to use the device:<br/>
 ### 3D models
-Three models that can be printed to modify a limit switch into a piano key, making the experience more fun. The limit switch must then be placed between the GND and 7th pins on the Arduino UNO board. <br/>
+Three models that can be printed to transfrom a limit switch into a piano key, making the experience more interactiv. The limit switch must then be placed between the GND and 7th pins of the Arduino UNO board. <br/>
 <p align="center"><img src="https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/assets/48076370/228370ce-31d1-4e93-90fb-3885e621cd3c" width="400"></p>
 
 
