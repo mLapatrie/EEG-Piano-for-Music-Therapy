@@ -1,4 +1,4 @@
-# Music Therapy with EEG Piano: Empowering Musical Expression for All
+# EEG Piano for Music Therapy: Empowering Musical Expression for All
 
 ## Overview:<br/>
 Music Therapy with EEG is a project that seeks to bring the therapeutic benefits of music to individuals with physical challenges, allowing them to actively participate in music therapy sessions. By using brainwave patterns captured through a homemade electroencephalogram (EEG) device, this tool allows users to control the pitch of musical notes, providing a unique and accessible way to play a musical instrument without requiring extensive physical dexterity.
