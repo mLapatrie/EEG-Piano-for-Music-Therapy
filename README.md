@@ -3,7 +3,8 @@
 ## Overview:<br/>
 Music Therapy with EEG is a project that seeks to bring the therapeutic benefits of music to individuals with physical challenges, allowing them to actively participate in music therapy sessions. By using brainwave patterns captured through a homemade electroencephalogram (EEG) device, this tool allows users to control the pitch of musical notes, providing a unique and accessible way to play a musical instrument without requiring extensive physical dexterity.
 
-<p align="center"><img src="https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/assets/48076370/ac27f225-1795-48e9-9aeb-db88cb2bb65d" width="1000"></p>
+![EEG Virtual Piano](https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/assets/48076370/6231d1c8-b00d-40bd-87e1-814f39b07479)
+
 
 ## This repository contains:<br/>
 The repository contains the schematic for the EEG device, 3D models for the piano key parts, code for EEG data processing and two different modes of piano playing that are explained in more details down below.
