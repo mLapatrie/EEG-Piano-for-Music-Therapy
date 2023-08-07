@@ -156,17 +156,11 @@ int adjustNote(int note) {
   String[] scale = split(arrayOfScales[currentBar], " "); // creates array of notes contained in the chord being played
   
   if (!elementInArray(chromaticScale[note%12], scale)) { // if played note is not contained in scale
-    if (previousTrans) { // if last played note was not contained in scale
-      previousTrans = false;
-      if (note < (noteRange-1)) { note += 1; }
-      else { note -= 1; }
-    }
-    else { previousTrans = true; } // play note, but cannot be followed by another transition note
-  } else { previousTrans = false; }
-  
+    if (note < (noteRange-1)) { note += 1; } 
+    else { note -= 1; }
+  }
   return note;
 }
-
 
 // returns true if targetElement is found in array, else returns false
 boolean elementInArray(String targetElement, String[] array) {
