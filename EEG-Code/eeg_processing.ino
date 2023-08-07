@@ -3,7 +3,7 @@
 // FFT variables
 const uint8_t samples = 128;
 const uint16_t sampling_freq = 500;
-const uint8_t amplitude = 1;
+const float amplitude = 0.5; // a smaller value means a bigger range of amplitudes
 unsigned int alpha_amplitude = 0;
 double vReal[samples];
 double vImag[samples];
@@ -64,5 +64,5 @@ void loop() {
 
   // sending the amplitude of the alpha waves over the serial port
   // the signal sent is between 0 and 255. If clipping, one must play with the amplitude variable.
-  Serial.println((uint8_t)round(alpha_amplitude));
+  Serial.println((uint8_t)round(alpha_amplitude/amplitude));
 }
