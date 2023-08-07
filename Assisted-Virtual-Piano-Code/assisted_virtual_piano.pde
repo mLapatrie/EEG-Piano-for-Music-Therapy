@@ -158,7 +158,8 @@ int adjustNote(int note) {
   if (!elementInArray(chromaticScale[note%12], scale)) { // if played note is not contained in scale
     if (previousTrans) { // if last played note was not contained in scale
       previousTrans = false;
-      note += 1;  // change note so it becomes more melodic
+      if (note < (noteRange-1)) { note += 1; }
+      else { note -= 1; }
     }
     else { previousTrans = true; } // play note, but cannot be followed by another transition note
   } else { previousTrans = false; }
