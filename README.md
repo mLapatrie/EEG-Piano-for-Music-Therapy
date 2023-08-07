@@ -28,8 +28,8 @@ Two modes that can be used with this program. The first one is a simple virtual 
 <p align="center"><img src="https://github.com/mLapatrie/Music-Therapy-with-EEG-Piano/assets/48076370/6698c0e4-4f29-4e08-8f45-00ee18edeb5f"></p>
 
 ### Accompanied virtual piano
-The second mode plays a music track while the user plays the piano over it. It then tracks the inputs of the user and slightly corrects them if necessary to make the music sound more melodic. This tool is especially good with jazz but works with any type of music the user prefers. <br/>
-Note: Right now, only jazz music is coded in the program, but it can be easily changed by changing the chords in the program and changing the background music file called chords.mp3.
+The second mode allows the user to play over a serie of preprogrammed chords. It tracks the inputs of the user and slightly corrects them if necessary to make the music sound more melodic. This tool is especially good with jazz but works with any type of music the user prefers. <br/>
+Note: By default, the program comes with a serie of jazz chords that play in the background, which can easily be muted. One can change the preprogrammed chords by changing the arrayOfScales variable in the assisted_virtual_piano.pde file.
 
 ## Troubleshooting
 **The signal read by the Arduino is 0.0**: If you've tried adjusting the gain of the EEG and the signal is stuck at zero, the signal may be negative. You can test this by interchanging the positive and the negative electrodes. If this doesn't work, try changing the resistor going from the inverting input to the output of the OP Amp to a higher value. This should drastically augment the gain and you should get a signal that clips a 1023.0. You can then play with the value of the gain to get a good signal. While doing all of this, make sure the impedance of your electrodes is at the lowest value possible.
